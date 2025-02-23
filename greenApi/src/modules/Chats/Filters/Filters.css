@@ -1,0 +1,31 @@
+.chats-filters{
+    margin-top: 3px;
+    margin-left: 3px;
+    display: flex;
+    height: 4%;
+    width: 100%;
+  }
+  
+  .chats-filter-switch{
+    background-color: #222e35;
+    border-radius: 24px;
+    height: 90%;
+    margin: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    font-family: Calibri;
+    font-size: 14px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #9a9aa5;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .chats-filter-switch:hover{
+    background-color:#374046;
+  }
+  
+  

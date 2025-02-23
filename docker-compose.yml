@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:  
+  client:    
+    build: ./greenApi    
+    container_name: greenApiFront    
+    ports:      
+      - '5173:5173'    
+    volumes:     
+      - ./greenApi:/app      
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+
+  server:
+    build: ./greenApiServer
+    container_name: greenApiServer
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./greenApiServer:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
